@@ -9,7 +9,16 @@ export const SimpleForm = () => {
 
     useEffect(() => {
         console.log("useEffect called!")
-    });
+    }, []);
+
+    useEffect(() => {
+        console.log("formState changed!")
+    }, [formState?.id]);
+    
+    useEffect(() => {
+        console.log("email changed!")
+    }, [formState && formState.email]);
+
 
     const onInputChange = ({target}) => {
         const { value, name } = target;
