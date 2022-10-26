@@ -56,7 +56,7 @@ export const SimpleForm = () => {
 
             <hr />
             {
-                formState.username == "Edu Estula2" && formState.email == "edu@test.com" && <Message />
+                formState.username == "Edu Estula2" && <Message />
             }
 
         </>
