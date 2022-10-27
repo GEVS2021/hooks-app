@@ -4,7 +4,7 @@ import { Message } from './Message';
 
 export const FormWithCustomHook = () => {
 
-    const {formState, onInputChange} = useForm({
+    const {formState, onInputChange, resetForm} = useForm({
         username: "",
         email: "",
         password: ""
@@ -41,6 +41,8 @@ export const FormWithCustomHook = () => {
                 value={formState.password}
                 onChange={onInputChange}
             />
+
+            <button className='btn btn-secondary mt-2' onClick={resetForm}> Reset </button>
 
             <hr />
             {
