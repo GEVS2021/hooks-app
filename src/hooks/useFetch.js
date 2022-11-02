@@ -13,6 +13,7 @@ export const useFetch = (url) => {
     // funciones propias de react
     useEffect(() => {
         if(url){
+            console.log({url})
             getFetch(url);
         }
     }, [url]);
